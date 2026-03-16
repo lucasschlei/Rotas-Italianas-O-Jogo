@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créditos</title>
+    <link rel="stylesheet" href="creditos.css">
+</head>
+
+<body>
+    <div class="credits-container">
+        <div class="credit-text">
+            <h1>Principais Desenvolvedores:</h1>
+            <p>Arthur, Bianca, Guilherme Pereira, João Humberto, Kawã Ducla</p>
+
+            <h1>Designers:</h1>
+            <p>Arthur, Guilherme Pereira</p>
+
+            <h1>Programadores:</h1>
+            <p>Bianca, João Humberto, Kawã Ducla</p>
+        </div>
+
+        <button id="backButton" class="back-button">Voltar para a página Inicial</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const creditText = document.querySelector('.credit-text');
+            const backButton = document.getElementById('backButton');
+
+            creditText.addEventListener('animationend', (event) => {
+                if (event.animationName === 'scrollUp') {
+                    // mostra o botão assim que os créditos chegam ao meio
+                    backButton.classList.add('show');
+                }
+            });
+
+            // ação do botão voltar
+            backButton.addEventListener('click', () => {
+                window.location.href = 'index.html';
+            });
+        });
+    </script>
+</body>
+
+</html>

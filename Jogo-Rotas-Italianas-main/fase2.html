@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jogoFase2.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <title>Rotas Italianas</title>
+</head>
+<body>
+
+    <!-- Tela de Introdução -->
+    <div id="intro-screen" class="intro-screen">
+        <div class="intro-box">
+            <h2>Fase 2: O Desafio Começa!</h2>
+            <p>Desvie das madeiras e dos passáros e acumule pontos. Cada segundo vale 1 ponto. Se bater, você perde!</p>
+            <p> A tecla <span class="key">espaço</span> faz o personagem pular! </p>
+            <p> A tecla &#8595; faz o personagem agachar</p> 
+            <button id="start-btn" class="btn-start">Start</button>
+        </div>
+    </div>
+
+    <!-- Área do jogo -->
+    <div class="game-board">
+        <div class="game-board">
+        <p class="texto"> Durante cinco anos, o povo de Nereu, junto com o padre, 
+            <br> dedicaram esforço e trabalho na edificação da igreja, 
+            <br> enfrentando desafios com muita fé e união. </p>
+        <img src="/img/sol.png" class="sol">
+        <img src="img/Gaybriel Ranthum.gif" class="pessoa1">
+        <img src="/img/tronco.png" class="madeira">
+        <img src="/img/passaro.gif" class="passaro">
+
+        <div style="text-align: center; justify-content: center;">
+            <button class="botao-restart" id="reiniciar">Reiniciar</button>
+            <button class="botao-inicio" id="inicio">Início</button>
+        </div>
+
+        <div>
+            <h1></h1>
+        </div>
+    </div>
+
+    <!-- Painel de Pontuação -->
+    <div class="pontuacao-board">
+        <h1 class="pontuacao" id="fase">Fase: 2</h1>
+        <h1 class="pontuacao" id="ponto">Pontos: 0</h1>
+        <h1 class="pontuacao" id="morte">Mortes: 0</h1>
+    </div>
+
+<script src="jogoFase2.js"></script>
+</body>
+</html>
